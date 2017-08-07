@@ -1,0 +1,98 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/scss/bootstrap.scss";
+
+// CUSTOM XXL Dropdown MODAL with animation
+.modal--animate {
+    .modal-dialog {
+        max-width: 100%; // 44px for the sidebar nav
+        margin-top: 44px; // 44px for the sidebar nav
+        width: 100%;
+        margin-left: 0;
+        .modal-content {
+            /* This calls the slideModalDown animation we defined below */
+            animation: .5s ease-out 0s 1 slideModalDown;
+            border-radius: 0;
+            border: none; // <-- border?
+            .modal-header {
+                background-color: #f7f7f9;
+            }
+            .modal-body {
+                padding-top: 15px;
+                .nav-tabs {
+                    margin-top: -15px;
+                    margin-left: -15px;
+                    margin-right: -15px;
+                }
+                .tab-content {
+                    margin-top: 15px;
+                    margin-bottom: 15px;
+                }
+            }
+        }
+    }
+}
+
+// NEW
+.modal--animate-hide {
+    .modal-dialog {
+        .modal-content {
+            /* This calls the slideModalDown animation we defined below */
+            animation: .5s ease-out 0s 1 slideModalUp !important;
+        }
+    }
+}
+
+.modal--centered {
+    .modal-dialog {
+        position: relative !important;
+        top: 50% !important;
+        transform: translateY(-50%) !important;
+    }
+}
+
+@media (min-width: 576px) {
+    // same as before
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+    .modal--animate {
+        .modal-dialog {
+            max-width: calc(100% - 76px); // 44px for the sidebar nav
+            margin-left: 60px; // ~ 44 + 15
+        }
+    }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+    // same as before
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+    .modal--animate {
+        .modal-dialog {
+            max-width: calc(100% - 132px);
+            margin-left: 88px;
+        }
+    }
+}
+
+@keyframes slideModalDown {
+    0% {
+        transform: translateY(-1000px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideModalUp {
+    0% {
+        transform: translateY(0);
+    }
+    100% { 
+        transform: translateY(-1000px);
+    }
+}

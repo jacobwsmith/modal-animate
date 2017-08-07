@@ -1,0 +1,28 @@
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <h1>Playing with modal</h1>
+      <button class="btn btn-secondary" (click)="open(myModal)">Show Modal</button>
+    </div>
+  </div>
+</div>
+
+<ng-template #myModal>
+  <div class="modal-header">
+    <h4 class="modal-title"><i class="fa fa-pencil" aria-hidden="true"></i> Modal Dropdown Test</h4>
+    <button type="button" class="close" aria-label="Close" title="close" (click)="close()">
+      <span aria-hidden="true">&times;</span>
+  </button>
+  </div>
+  <div class="modal-body">
+    <div class="row">
+      <div class="col">
+        <p>body</p>
+      </div>
+    </div>
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-primary" (click)="save()">Save</button>
+    <button type="button" class="btn btn-secondary" (click)="close()">Close</button>
+  </div>
+</ng-template>
