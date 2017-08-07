@@ -4,10 +4,13 @@
 
 Applying custom animation to a [ng-bootstrap](https://ng-bootstrap.github.io/#/components/modal/api) modal component. This example is for an Angular project.
 
-### Install
+### Just Run the Demo
+[https://jacobwsmith.github.io/modal-animate/](https://jacobwsmith.github.io/modal-animate/)
+
+### Install Application
 `npm install`
 
-### Run
+### Run Application
 `npm start`
 
 ### Resources
