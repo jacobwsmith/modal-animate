@@ -1,8 +1,13 @@
-# modal-animate
+# Modal Animate
+
+[![No Maintenance Intended](http://unmaintained.tech/badge.svg)](http://unmaintained.tech/)
 
 Applying custom animation to a [ng-bootstrap](https://ng-bootstrap.github.io/#/components/modal/api) modal component. This example is for an Angular project.
 
-### Run Application
+### Install
+`npm install`
+
+### Run
 `npm start`
 
 ### Resources
